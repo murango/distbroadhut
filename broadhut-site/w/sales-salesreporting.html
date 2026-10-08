@@ -1,0 +1,23 @@
+<article class="window" id="win-sales-salesreporting" role="dialog" style="top:70px;left:12vw">
+  <div class="win-bar" onmousedown="startDrag(event,'win-sales-salesreporting')" ontouchstart="startDragT(event,'win-sales-salesreporting')">
+    <div class="win-btns"><button class="wb wb-x" onclick="closeWin('sales-salesreporting')"></button><button class="wb wb-m" onclick="minimiseWin('sales-salesreporting')"></button><button class="wb wb-z" onclick="toggleMax('win-sales-salesreporting')"></button></div>
+    <span class="win-ttl">📈 Sales Reporting</span>
+  </div>
+  <div class="win-body">
+    <span class="wh-icon">📈</span>
+    <h2 class="wh-title">Sales Reporting</h2>
+    <span class="wh-tag" style="color:var(--tag-teal)">Sales</span>
+    <p class="wh-desc">Know what's selling, by product, branch, or salesperson, without pulling numbers by hand.</p>
+    <p class="wh-desc" style="margin-top:-12px">Knowing what sells best by product, branch, or salesperson usually means someone spends a day building a report. We set up reports that update themselves from the sales records, so the numbers are ready when you ask.</p>
+    <h3 style="font-size:16px;font-weight:700;margin-bottom:14px">More in Sales</h3>
+    <div class="wh-grid">
+      <a class="wh-feat wh-feat-link" data-win="sales-quotetoinvoice" href="/services/business-systems/sales/quote-to-invoice/"><span class="wf-icon">📝</span><div class="wf-name">Quote to Invoice</div><div class="wf-desc">One record from quotation to paid invoice, no retyping figures between tools.</div></a>
+      <a class="wh-feat wh-feat-link" data-win="sales-cashflowvisibility" href="/services/business-systems/sales/cash-flow-visibility/"><span class="wf-icon">💰</span><div class="wf-name">Cash Flow Visibility</div><div class="wf-desc">See exactly what's outstanding and who owes you, without chasing a spreadsheet.</div></a>
+      <a class="wh-feat wh-feat-link" data-win="sales-connectedtostock" href="/services/business-systems/sales/connected-to-stock/"><span class="wf-icon">🔗</span><div class="wf-name">Connected to Stock</div><div class="wf-desc">Every sale automatically updates inventory, so stock counts stay accurate on their own.</div></a>
+    </div>
+    <div class="cta-row">
+      <button class="wh-cta" style="background:#5ee0a0;color:#0a2a17" data-proj="sales-salesreporting" data-label="＋ Add to my project" onclick="toggleProject('sales-salesreporting','Sales Reporting (Sales)')">＋ Add to my project</button>
+      <a class="wh-cta wh-cta-secondary" data-win="sales" href="/services/business-systems/sales/">← Back to Sales</a>
+    </div>
+  </div>
+</article>

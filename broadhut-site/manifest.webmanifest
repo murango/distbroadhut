@@ -1,0 +1,15 @@
+{
+  "name": "Broadhut Studio",
+  "short_name": "Broadhut",
+  "description": "Enterprise engineering, business systems, and digital studio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1e1e16",
+  "theme_color": "#1e1e16",
+  "orientation": "any",
+  "categories": ["business", "productivity"],
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

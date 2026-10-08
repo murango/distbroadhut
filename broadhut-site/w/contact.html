@@ -1,0 +1,17 @@
+<article class="window" id="win-contact" role="dialog" style="top:74px;left:34vw">
+  <div class="win-bar" onmousedown="startDrag(event,'win-contact')" ontouchstart="startDragT(event,'win-contact')">
+    <div class="win-btns"><button class="wb wb-x" onclick="closeWin('contact')"></button><button class="wb wb-m" onclick="minimiseWin('contact')"></button><button class="wb wb-z" onclick="toggleMax('win-contact')"></button></div>
+    <span class="win-ttl">✉️ Contact Broadhut</span>
+  </div>
+  <div class="win-body">
+    <a href="#contactFormEmbed" onclick="document.getElementById('contactFormEmbed').scrollIntoView({behavior:'smooth',block:'start'});" style="text-decoration:none;color:inherit;display:block;cursor:pointer" aria-label="Jump to the form below">
+      <span class="wh-icon">✉️</span>
+      <h2 class="wh-title">Let's build something</h2>
+      <span class="wh-tag" style="color:var(--tag-orange)">Responds within 24 hours · Free discovery call</span>
+      <p class="wh-desc" style="margin-bottom:20px">Have a project in mind? Drop us a message and we'll reply with a free 30-minute discovery call: a conversation about what you're building, with no sales pitch attached.</p>
+    </a>
+    <div class="win-form" id="contactFormEmbed">
+      <iframe data-tally-src="https://tally.so/embed/KY9NYD?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=0&amp;dynamicHeight=1" loading="lazy" width="100%" height="420" frameborder="0" marginheight="0" marginwidth="0" title="Contact form"></iframe>
+    </div>
+  </div>
+</article>

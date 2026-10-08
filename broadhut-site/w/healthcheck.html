@@ -1,0 +1,13 @@
+<article class="window" id="win-healthcheck" role="dialog" style="top:82px;left:22vw">
+  <div class="win-bar" onmousedown="startDrag(event,'win-healthcheck')" ontouchstart="startDragT(event,'win-healthcheck')">
+    <div class="win-btns"><button class="wb wb-x" onclick="closeWin('healthcheck')"></button><button class="wb wb-m" onclick="minimiseWin('healthcheck')"></button><button class="wb wb-z" onclick="toggleMax('win-healthcheck')"></button></div>
+    <span class="win-ttl">🩺 Business Health Check</span>
+  </div>
+  <div class="win-body">
+    <div class="hc-tf" id="hcTypeform">
+      <div class="hc-tf-progress"><div class="hc-tf-progress-fill" id="hcProgressFill"></div></div>
+      <div class="hc-tf-count" id="hcCount">Question 1 of 19</div>
+      <div class="hc-tf-stage" id="hcStage"></div>
+    </div>
+  </div>
+</article>

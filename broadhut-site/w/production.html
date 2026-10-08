@@ -1,0 +1,23 @@
+<article class="window" id="win-production" role="dialog" style="top:70px;left:12vw">
+  <div class="win-bar" onmousedown="startDrag(event,'win-production')" ontouchstart="startDragT(event,'win-production')">
+    <div class="win-btns"><button class="wb wb-x" onclick="closeWin('production')"></button><button class="wb wb-m" onclick="minimiseWin('production')"></button><button class="wb wb-z" onclick="toggleMax('win-production')"></button></div>
+    <span class="win-ttl">🏭 Production</span>
+  </div>
+  <div class="win-body">
+    <span class="wh-icon">🏭</span>
+    <h2 class="wh-title">Production</h2>
+    <span class="wh-tag" style="color:var(--tag-green)">Bill of Materials · Work Orders · Job Cards</span>
+    <p class="wh-desc">If your production floor still runs on a whiteboard and a supervisor's memory, every delay is invisible until a customer asks where their order is. A production module makes the whole floor trackable, from raw materials to finished goods.</p>
+    <p class="wh-desc" style="margin-top:-12px">For your business specifically, this means a bill of materials that tells you exactly what a job needs before you start it, work orders your floor can follow without a verbal handoff, and job cards that show you where every order is, in real time.</p>
+    <div class="wh-grid">
+      <a class="wh-feat wh-feat-link" data-win="production-billofmaterials" href="/services/business-systems/production/bill-of-materials/"><span class="wf-icon">📐</span><div class="wf-name">Bill of Materials</div><div class="wf-desc">Know exactly what raw materials a job needs before it starts, not after you've run short.</div><span class="wf-more">See how this helps your business →</span></a>
+      <a class="wh-feat wh-feat-link" data-win="production-workorders" href="/services/business-systems/production/work-orders/"><span class="wf-icon">🗂️</span><div class="wf-name">Work Orders</div><div class="wf-desc">Instructions that travel with the job, so nothing depends on a verbal handoff between shifts.</div><span class="wf-more">See how this helps your business →</span></a>
+      <a class="wh-feat wh-feat-link" data-win="production-jobcardtracking" href="/services/business-systems/production/job-card-tracking/"><span class="wf-icon">📍</span><div class="wf-name">Job Card Tracking</div><div class="wf-desc">See where every order is on the floor, instead of asking a supervisor to go check.</div><span class="wf-more">See how this helps your business →</span></a>
+      <a class="wh-feat wh-feat-link" data-win="production-truejobcosting" href="/services/business-systems/production/true-job-costing/"><span class="wf-icon">💸</span><div class="wf-name">True Job Costing</div><div class="wf-desc">Material and labour costs per job, so you know which orders are profitable.</div><span class="wf-more">See how this helps your business →</span></a>
+    </div>
+    <div class="cta-row">
+      <button class="wh-cta" style="background:#5ee0a0;color:#0a2a17" data-proj="production" data-label="＋ Add Production to my project" onclick="toggleProject('production','Production')">＋ Add Production to my project</button>
+      <a class="wh-cta wh-cta-secondary" data-win="bsys" href="/services/business-systems/">← Back to Business Systems</a>
+    </div>
+  </div>
+</article>

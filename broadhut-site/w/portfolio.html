@@ -1,0 +1,19 @@
+<article class="window" id="win-portfolio" role="dialog" style="top:82px;left:16vw">
+  <div class="win-bar" onmousedown="startDrag(event,'win-portfolio')" ontouchstart="startDragT(event,'win-portfolio')">
+    <div class="win-btns"><button class="wb wb-x" onclick="closeWin('portfolio')"></button><button class="wb wb-m" onclick="minimiseWin('portfolio')"></button><button class="wb wb-z" onclick="toggleMax('win-portfolio')"></button></div>
+    <span class="win-ttl">🗂 Portfolio</span>
+  </div>
+  <div class="win-body">
+    <span class="wh-icon">🗂</span>
+    <h2 class="wh-title">Our Portfolio</h2>
+    <span class="wh-tag" style="color:var(--tag-purple)">Selected work</span>
+    <p class="wh-desc">A sample of the range of work we take on, from early-stage products to established operations. Full case studies available on request.</p>
+    <div class="wh-grid">
+      <div class="wh-feat" style="background:rgba(123,104,238,.1)"><span class="wf-icon">🏦</span><div class="wf-name">FinTech Rebrand</div><div class="wf-desc">Full rebrand and web app for an early-stage fintech client.</div></div>
+      <div class="wh-feat" style="background:rgba(0,212,170,.08)"><span class="wf-icon">🛍</span><div class="wf-name">Luxury Retail</div><div class="wf-desc">Headless commerce build with a focus on load speed and checkout flow.</div></div>
+      <div class="wh-feat" style="background:rgba(255,107,53,.08)"><span class="wf-icon">🏥</span><div class="wf-name">HealthTech Product</div><div class="wf-desc">Design system and app build for a healthtech product team.</div></div>
+      <div class="wh-feat" style="background:rgba(72,176,232,.08)"><span class="wf-icon">🌍</span><div class="wf-name">NGO Website</div><div class="wf-desc">Multilingual site rebuild with accessibility as a core requirement.</div></div>
+    </div>
+    <a class="wh-cta" style="background:#8b78ff;color:#fff" data-win="contact" href="/contact/">→ Ask to see more work</a>
+  </div>
+</article>

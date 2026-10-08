@@ -1,0 +1,32 @@
+<article class="window" id="win-explorer" role="dialog" style="top:68px;left:10vw;width:min(700px,94vw)!important;min-width:min(540px,94vw)">
+  <div class="win-bar" onmousedown="startDrag(event,'win-explorer')" ontouchstart="startDragT(event,'win-explorer')">
+    <div class="win-btns"><button class="wb wb-x" onclick="closeWin('explorer')"></button><button class="wb wb-m" onclick="minimiseWin('explorer')"></button><button class="wb wb-z" onclick="toggleMax('win-explorer')"></button></div>
+    <span class="win-ttl">📁 Broadhut Explorer</span>
+  </div>
+  <div style="flex:1;display:flex;flex-direction:column;overflow:hidden">
+    <div class="explorer-toolbar">
+      <button class="exp-btn" onclick="expNav(-1)">←</button>
+      <button class="exp-btn" onclick="expNav(1)">→</button>
+      <div class="exp-path" id="expPath">Broadhut / All Files</div>
+    </div>
+    <div class="explorer-layout" style="flex:1;overflow:hidden">
+      <nav class="explorer-sidebar">
+        <div class="exp-section-title">Studio</div>
+        <div class="exp-side-item active" id="expSide-all" onclick="expOpenFolder('all')">      <span class="exp-side-icon">📁</span>All Files</div>
+        <div class="exp-side-item" id="expSide-services" onclick="expOpenFolder('services')"> <span class="exp-side-icon">⚡</span>Services</div>
+        <div class="exp-side-item" id="expSide-work" onclick="expOpenFolder('work')">     <span class="exp-side-icon">🗂</span>Our Work</div>
+        <div class="exp-side-item" id="expSide-studio" onclick="expOpenFolder('studio')">   <span class="exp-side-icon">🏢</span>Studio</div>
+        <div class="exp-section-title">Quick Access</div>
+        <div class="exp-side-item" id="expSide-contact" onclick="expOpenFolder('contact')">  <span class="exp-side-icon">✉️</span>Contact</div>
+        <div class="exp-side-item" id="expSide-pricing" onclick="expOpenFolder('pricing')">  <span class="exp-side-icon">💰</span>Pricing</div>
+        <div class="exp-side-item" id="expSide-about" onclick="expOpenFolder('about')">    <span class="exp-side-icon">🧑‍💼</span>About</div>
+        <div class="exp-section-title">Legal</div>
+        <div class="exp-side-item" id="expSide-legal" onclick="expOpenFolder('legal')">    <span class="exp-side-icon">⚖️</span>Legal Docs</div>
+      </nav>
+      <div class="explorer-main">
+        <div class="explorer-grid" id="expGrid"></div>
+        <div class="exp-status" id="expStatus">16 items</div>
+      </div>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,23 @@
+<article class="window" id="win-production-workorders" role="dialog" style="top:70px;left:12vw">
+  <div class="win-bar" onmousedown="startDrag(event,'win-production-workorders')" ontouchstart="startDragT(event,'win-production-workorders')">
+    <div class="win-btns"><button class="wb wb-x" onclick="closeWin('production-workorders')"></button><button class="wb wb-m" onclick="minimiseWin('production-workorders')"></button><button class="wb wb-z" onclick="toggleMax('win-production-workorders')"></button></div>
+    <span class="win-ttl">🗂️ Work Orders</span>
+  </div>
+  <div class="win-body">
+    <span class="wh-icon">🗂️</span>
+    <h2 class="wh-title">Work Orders</h2>
+    <span class="wh-tag" style="color:var(--tag-teal)">Production</span>
+    <p class="wh-desc">Instructions that travel with the job, so nothing depends on a verbal handoff between shifts.</p>
+    <p class="wh-desc" style="margin-top:-12px">Instructions passed by word of mouth change a little at every handoff. Each job carries its own written work order from start to finish, so every shift and team works from the same instructions.</p>
+    <h3 style="font-size:16px;font-weight:700;margin-bottom:14px">More in Production</h3>
+    <div class="wh-grid">
+      <a class="wh-feat wh-feat-link" data-win="production-billofmaterials" href="/services/business-systems/production/bill-of-materials/"><span class="wf-icon">📐</span><div class="wf-name">Bill of Materials</div><div class="wf-desc">Know exactly what raw materials a job needs before it starts, not after you've run short.</div></a>
+      <a class="wh-feat wh-feat-link" data-win="production-jobcardtracking" href="/services/business-systems/production/job-card-tracking/"><span class="wf-icon">📍</span><div class="wf-name">Job Card Tracking</div><div class="wf-desc">See where every order is on the floor, instead of asking a supervisor to go check.</div></a>
+      <a class="wh-feat wh-feat-link" data-win="production-truejobcosting" href="/services/business-systems/production/true-job-costing/"><span class="wf-icon">💸</span><div class="wf-name">True Job Costing</div><div class="wf-desc">Material and labour costs per job, so you know which orders are profitable.</div></a>
+    </div>
+    <div class="cta-row">
+      <button class="wh-cta" style="background:#5ee0a0;color:#0a2a17" data-proj="production-workorders" data-label="＋ Add to my project" onclick="toggleProject('production-workorders','Work Orders (Production)')">＋ Add to my project</button>
+      <a class="wh-cta wh-cta-secondary" data-win="production" href="/services/business-systems/production/">← Back to Production</a>
+    </div>
+  </div>
+</article>

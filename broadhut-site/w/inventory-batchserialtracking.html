@@ -1,0 +1,23 @@
+<article class="window" id="win-inventory-batchserialtracking" role="dialog" style="top:70px;left:12vw">
+  <div class="win-bar" onmousedown="startDrag(event,'win-inventory-batchserialtracking')" ontouchstart="startDragT(event,'win-inventory-batchserialtracking')">
+    <div class="win-btns"><button class="wb wb-x" onclick="closeWin('inventory-batchserialtracking')"></button><button class="wb wb-m" onclick="minimiseWin('inventory-batchserialtracking')"></button><button class="wb wb-z" onclick="toggleMax('win-inventory-batchserialtracking')"></button></div>
+    <span class="win-ttl">🔎 Batch &amp; Serial Tracking</span>
+  </div>
+  <div class="win-body">
+    <span class="wh-icon">🔎</span>
+    <h2 class="wh-title">Batch &amp; Serial Tracking</h2>
+    <span class="wh-tag" style="color:var(--tag-teal)">Inventory</span>
+    <p class="wh-desc">Trace any item back to its batch or serial number when it matters.</p>
+    <p class="wh-desc" style="margin-top:-12px">If a product has a fault or an expiry date, you need to know exactly which units are affected. We track items by batch or serial number from receipt to sale, so any unit can be traced in both directions.</p>
+    <h3 style="font-size:16px;font-weight:700;margin-bottom:14px">More in Inventory</h3>
+    <div class="wh-grid">
+      <a class="wh-feat wh-feat-link" data-win="inventory-realtimestock" href="/services/business-systems/inventory/real-time-stock/"><span class="wf-icon">📍</span><div class="wf-name">Real-Time Stock</div><div class="wf-desc">Know exactly what's on hand, in every location, without a physical count.</div></a>
+      <a class="wh-feat wh-feat-link" data-win="inventory-smartreordering" href="/services/business-systems/inventory/smart-reordering/"><span class="wf-icon">🔁</span><div class="wf-name">Smart Reordering</div><div class="wf-desc">Reorder points tuned to your lead times, so you're not guessing when to restock.</div></a>
+      <a class="wh-feat wh-feat-link" data-win="inventory-multiwarehouse" href="/services/business-systems/inventory/multi-warehouse/"><span class="wf-icon">🏬</span><div class="wf-name">Multi-Warehouse</div><div class="wf-desc">One view across every branch or warehouse, instead of a separate spreadsheet for each.</div></a>
+    </div>
+    <div class="cta-row">
+      <button class="wh-cta" style="background:#5ee0a0;color:#0a2a17" data-proj="inventory-batchserialtracking" data-label="＋ Add to my project" onclick="toggleProject('inventory-batchserialtracking','Batch &amp; Serial Tracking (Inventory)')">＋ Add to my project</button>
+      <a class="wh-cta wh-cta-secondary" data-win="inventory" href="/services/business-systems/inventory/">← Back to Inventory</a>
+    </div>
+  </div>
+</article>

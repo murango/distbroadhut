@@ -1,0 +1,23 @@
+<article class="window" id="win-sales" role="dialog" style="top:70px;left:12vw">
+  <div class="win-bar" onmousedown="startDrag(event,'win-sales')" ontouchstart="startDragT(event,'win-sales')">
+    <div class="win-btns"><button class="wb wb-x" onclick="closeWin('sales')"></button><button class="wb wb-m" onclick="minimiseWin('sales')"></button><button class="wb wb-z" onclick="toggleMax('win-sales')"></button></div>
+    <span class="win-ttl">🛒 Sales</span>
+  </div>
+  <div class="win-body">
+    <span class="wh-icon">🛒</span>
+    <h2 class="wh-title">Sales</h2>
+    <span class="wh-tag" style="color:var(--tag-green)">Quotes · Orders · Invoicing</span>
+    <p class="wh-desc">Most businesses lose money in the gap between "we agreed a price" and "the invoice went out." A sales module closes that gap: quotes, orders, and invoices live in one system instead of three different WhatsApp threads and a notebook.</p>
+    <p class="wh-desc" style="margin-top:-12px">For your business specifically, this means quotations that convert straight into orders without retyping anything, invoices that go out the same day a job is done, and a clear view of what's been sold, what's been paid, and what's still outstanding.</p>
+    <div class="wh-grid">
+      <a class="wh-feat wh-feat-link" data-win="sales-quotetoinvoice" href="/services/business-systems/sales/quote-to-invoice/"><span class="wf-icon">📝</span><div class="wf-name">Quote to Invoice</div><div class="wf-desc">One record from quotation to paid invoice, no retyping figures between tools.</div><span class="wf-more">See how this helps your business →</span></a>
+      <a class="wh-feat wh-feat-link" data-win="sales-cashflowvisibility" href="/services/business-systems/sales/cash-flow-visibility/"><span class="wf-icon">💰</span><div class="wf-name">Cash Flow Visibility</div><div class="wf-desc">See exactly what's outstanding and who owes you, without chasing a spreadsheet.</div><span class="wf-more">See how this helps your business →</span></a>
+      <a class="wh-feat wh-feat-link" data-win="sales-connectedtostock" href="/services/business-systems/sales/connected-to-stock/"><span class="wf-icon">🔗</span><div class="wf-name">Connected to Stock</div><div class="wf-desc">Every sale automatically updates inventory, so stock counts stay accurate on their own.</div><span class="wf-more">See how this helps your business →</span></a>
+      <a class="wh-feat wh-feat-link" data-win="sales-salesreporting" href="/services/business-systems/sales/sales-reporting/"><span class="wf-icon">📈</span><div class="wf-name">Sales Reporting</div><div class="wf-desc">Know what's selling, by product, branch, or salesperson, without pulling numbers by hand.</div><span class="wf-more">See how this helps your business →</span></a>
+    </div>
+    <div class="cta-row">
+      <button class="wh-cta" style="background:#5ee0a0;color:#0a2a17" data-proj="sales" data-label="＋ Add Sales to my project" onclick="toggleProject('sales','Sales')">＋ Add Sales to my project</button>
+      <a class="wh-cta wh-cta-secondary" data-win="bsys" href="/services/business-systems/">← Back to Business Systems</a>
+    </div>
+  </div>
+</article>

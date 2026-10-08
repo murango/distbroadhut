@@ -1,0 +1,19 @@
+<article class="window" id="win-pricing" role="dialog" style="top:84px;left:14vw">
+  <div class="win-bar" onmousedown="startDrag(event,'win-pricing')" ontouchstart="startDragT(event,'win-pricing')">
+    <div class="win-btns"><button class="wb wb-x" onclick="closeWin('pricing')"></button><button class="wb wb-m" onclick="minimiseWin('pricing')"></button><button class="wb wb-z" onclick="toggleMax('win-pricing')"></button></div>
+    <span class="win-ttl">💬 Tell Us About Your Business</span>
+  </div>
+  <div class="win-body">
+    <a href="#pricingFormEmbed" onclick="document.getElementById('pricingFormEmbed').scrollIntoView({behavior:'smooth',block:'start'});" style="text-decoration:none;color:inherit;display:block;cursor:pointer" aria-label="Jump to the form below">
+      <span class="wh-icon">💬</span>
+      <h2 class="wh-title">Tell Us About Your Business</h2>
+      <span class="wh-tag" style="color:var(--tag-teal)">We start by understanding how you work</span>
+      <p class="wh-desc">We don't quote against a request alone. Before we talk numbers, we want to understand what your business does, how it runs today, and where things are slowing you down. Answer what you can below and we'll come back with next steps, usually within 24 hours.</p>
+    </a>
+    <p style="font-size:12.5px;color:var(--dim);margin:-14px 0 20px"><span style="text-decoration:underline;cursor:pointer" onclick="event.stopPropagation();openWin('howpricing')">Curious how we land on a number first? See how pricing works →</span></p>
+    <div class="proj-note" id="projNote"></div>
+    <div class="win-form" id="pricingFormEmbed">
+      <iframe id="pricingTallyFrame" data-tally-src="https://tally.so/embed/XxpvoL?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1" loading="lazy" width="100%" height="460" frameborder="0" marginheight="0" marginwidth="0" title="Tell us about your business form"></iframe>
+    </div>
+  </div>
+</article>
