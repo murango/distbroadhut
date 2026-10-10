@@ -11,7 +11,7 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
   Strict-Transport-Security: max-age=31536000
-  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' 'unsafe-inline' https://tally.so; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://*.ufs.sh; frame-src https://tally.so; connect-src 'self' https://tally.so; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://tally.so; frame-ancestors 'none'; upgrade-insecure-requests
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' 'unsafe-inline' https://tally.so https://www.googletagmanager.com https://us-assets.i.posthog.com https://eu-assets.i.posthog.com https://plausible.io; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://*.ufs.sh https://www.google-analytics.com https://*.google-analytics.com; frame-src https://tally.so https://www.openstreetmap.org; connect-src 'self' https://tally.so https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com https://us.i.posthog.com https://eu.i.posthog.com https://us-assets.i.posthog.com https://eu-assets.i.posthog.com https://plausible.io; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://tally.so; frame-ancestors 'none'; upgrade-insecure-requests
 
 # CACHING
 # Built CSS and JS carry a fingerprint in the file name, so they can be cached for a year
